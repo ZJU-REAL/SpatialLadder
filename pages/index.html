@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SpatialLadder: Progressive Training for Spatial Reasoning in Vision-Language Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SpatialLadder: Progressive Training for Spatial Reasoning in Vision-Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                              <span class="author-block">
+                  <a href="mailto:hongxing.li@zju.edu.cn" target="_blank">Hongxing Li</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:lidingm@std.uestc.edu.cn" target="_blank">Dingming Li</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  Zixuan Wang<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Yuchen Yan<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Hang Wu<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Wenqi Zhang<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:syl@zju.edu.cn" target="_blank">Yongliang Shen</a><sup>1†</sup>,
+                </span>
+                <span class="author-block">
+                  Weiming Lu<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Jun Xiao<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Yueting Zhuang<sup>1</sup>,
+                </span>
+              </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Zhejiang University,</span>
+                    <br>
+                    <span class="author-block">Preprint. Under review.</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ZJU-REAL/SpatialLadder" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Model -->
+                  <span class="link-block">
+                      <a href="https://huggingface.co/hongxingli/SpatialLadder-3B" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                          <span style="vertical-align: middle;">Model</span>
+                      </a>
+                  </span>
+                
+                <!-- Data -->
+                  <span class="link-block">
+                      <a href="https://huggingface.co/hongxingli/SpatialLadder-26k" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                          <span style="vertical-align: middle;">Data</span>
+                      </a>
+                  </span>
+
+                <!-- Bench -->
+                  <span class="link-block">
+                      <a href="https://huggingface.co/hongxingli/SPBench" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                          <span style="vertical-align: middle;">Bench</span>
+                      </a>
+                  </span>
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Spatial reasoning remains a fundamental challenge for Vision-Language Models (VLMs), with current approaches struggling to achieve robust performance despite recent advances. We identify that this limitation stems from a critical gap: existing methods attempt to learn spatial reasoning directly without establishing the hierarchical foundations of perception and understanding. To address this challenge, we present a comprehensive methodology for building spatial intelligence progressively. We introduce SpatialLadder-26k, a multimodal dataset containing 26,610 samples spanning object localization, single-image, multi-view, and video spatial reasoning tasks, constructed through a standardized pipeline that ensures systematic coverage across modalities. Building on this dataset, we design a three-stage progressive training framework that (1) establishes spatial perception through object localization, (2) develops spatial understanding through multi-dimensional spatial tasks, and (3) strengthens complex reasoning via reinforcement learning with verifiable rewards. This approach yields SpatialLadder, a 3B-parameter model that achieves state-of-the-art performance on spatial reasoning benchmarks, with 23.4% average improvement over the base model, surpassing GPT-4o by 20.8% and Gemini-2.0-Flash by 10.1%. Notably, SpatialLadder maintains strong generalization with 7.2% improvement on out-of- domain benchmarks, demonstrating that progressive training from perception to reasoning is essential for robust spatial intelligence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">SpatialLadder-26k</h2>
+         <p>
+              <img src="static/images/dataset.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                SpatialLadder-26k is a large-scale, high-quality dataset designed to advance spatial reasoning in multimodal models through a progressive learning curriculum. It contains 26,610 samples spanning four hierarchical task categories — object localization (5,929 samples), single-image spatial reasoning (5,929 samples), multi-view spatial reasoning (5,752 samples), and video spatial reasoning (9,000 samples) — enabling systematic skill development from low-level perception to high-level spatiotemporal understanding. The dataset covers three modalities and seven reasoning dimensions, including relative direction, relative and absolute distance, object size, counting, room size, and appearance order. Constructed through a standardized three-stage pipeline, SpatialLadder-26k integrates 3D scene reconstructions from ScanNet and video sequences from SR-91k, followed by precise 3D–2D transformation, data unification, and automatic question–answer generation adapted from VSI-Bench templates. This design ensures diverse, well-structured, and high-fidelity data for training and evaluating multimodal large language models on comprehensive spatial understanding tasks.            
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Progressive Three-stage Training Framework</h2>
+         <p>
+              <img src="static/images/framework.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                Building upon SpatialLadder-26k, our framework systematically cultivates spatial intelligence through three progressive stages, mirroring the cognitive hierarchy from perception to reasoning. Stage 1 (Spatial Perception) establishes strong visual grounding by fine-tuning on object localization tasks, enabling precise mapping between language and spatially referenced visual regions. Stage 2 (Spatial Understanding) expands comprehension across seven spatial dimensions — including direction, distance, size, and order — through multimodal fine-tuning on single-image, multi-view, and video tasks, fostering robust and generalizable spatial representations. Stage 3 (Spatial Reasoning) further enhances reasoning capability using Group Relative Policy Optimization (GRPO)-based reinforcement learning with chain-of-thought (CoT) generation, guided by rewards for structured reasoning and accurate answers. Together, these stages form a unified, curriculum-inspired training process that progressively transforms perception into structured spatial reasoning in multimodal large language models.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">In-domain Performance</h2>
+         <p>
+              <img src="static/images/in_domain_performance.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                  SpatialLadder achieves state-of-the-art performance across multiple spatial reasoning benchmarks, reaching an overall accuracy of 62.3% and outperforming all baseline and proprietary models. The performance gains are especially significant on our proposed benchmarks — 70.2% on SPBench-SI and 70.9% on SPBench-MV, representing improvements of +29.9% and +34.3% over the base model, respectively. Even without specialized 3D encoders, SpatialLadder attains 45.7% accuracy on VSI-Bench (+16.3% over the base model), comparable to the 47.3% achieved by Spatial-MLLM with 3D encoders. These results demonstrate that progressive training effectively replaces architectural complexity, enabling robust spatial understanding that generalizes across numerical (NQ) and multiple-choice (MCQ) tasks.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Generalization Analysis</h2>
+          <p>
+              <img src="static/images/out_of_domain_performance.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                  SpatialLadder demonstrates strong out-of-domain generalization with an overall accuracy of 50.8%, surpassing GPT-4o (48.1%) and maintaining a 7.2% improvement over the base model. The performance gains are consistent across diverse evaluation settings — CV-Bench for classical vision tasks, SPAR-Bench for multi-level reasoning, and ViewSpatial-Bench for perspective-dependent understanding. Notably, a 16.5% improvement on person-perspective tasks in ViewSpatial-Bench highlights the model’s ability to learn robust, transferable spatial representations that generalize effectively to novel viewpoints and unseen scenarios.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Preliminary Analysis</h2>
+          <img src="static/images/preliminary.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 60%;"/>
+          <h2 class="subtitle has-text-centered">
+            Progressive perceptual guidance enhances spatial reasoning.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Component Analysis</h2>
+          <img src="static/images/component_analysis.png" alt="MY ALT TEXT" style="max-width: 40%;"/>
+          <h2 class="subtitle has-text-centered">
+            Progressive training components collectively enhance spatial reasoning accuracy.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Training Dynamics</h2>
+          <img src="static/images/training_dynamics.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            Complete SpatialLadder training ensures stable learning and superior spatial reasoning performance.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Semantic Entropy Dynamics</h2>
+          <img src="static/images/semantic_entropy_dynamics.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 50%;"/>
+          <h2 class="subtitle has-text-centered">
+            Reinforcement learning drives semantic consistency and convergent spatial reasoning.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Visual Attention Comparison</h2>
+          <img src="static/images/visual_attention.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            Progressive training sharpens visual attention, making it more object-centric and task-focused.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Hierarchical Reasoning Cases</h2>
+          <img src="static/images/reasoning_cases.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            Perceptual foundations naturally scaffold hierarchical spatial reasoning and systematic cognition.
+          </h2>
+        </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code></code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+
+  </body>
+  </html>
