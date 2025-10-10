@@ -6,7 +6,7 @@
 
 _A progressive three-stage training framework with a high-quality dataset for spatial reasoning_
 
-<a href="https://arxiv.org/abs/2510.08531" target="_blank">
+<a href="https://arxiv.org/pdf/2510.08531" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-SpatialLadder-red?logo=arxiv" height="20" />
 </a>
 <a href="https://zju-real.github.io/SpatialLadder" target="_blank">
