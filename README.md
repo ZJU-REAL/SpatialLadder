@@ -25,7 +25,8 @@ _A progressive three-stage training framework with a high-quality dataset for sp
 </div>
 
 ## 🎉 News
-
+- **2025.10.10:** We release our model, dataset, benchmarks and codes.
+- **2025.10.10:** We release our paper.
 
 ## 📝 Abstract
 
@@ -132,5 +133,14 @@ Our training framework is built upon **[TRL](https://github.com/huggingface/trl)
 If you find SpatialLadder useful, please consider citing our work:
 
 ```bibtex
+@misc{li2025spatialladderprogressivetrainingspatial,
+      title={SpatialLadder: Progressive Training for Spatial Reasoning in Vision-Language Models}, 
+      author={Hongxing Li and Dingming Li and Zixuan Wang and Yuchen Yan and Hang Wu and Wenqi Zhang and Yongliang Shen and Weiming Lu and Jun Xiao and Yueting Zhuang},
+      year={2025},
+      eprint={2510.08531},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.08531}, 
+}
 
 ```
