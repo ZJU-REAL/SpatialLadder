@@ -1,7 +1,9 @@
 <div align="center">
 
 <h1 style="text-align:center;">
-<img src="figures/icon.png" width="4%"/> SpatialLadder:  Progressive Training for Spatial Reasoning in Vision-Language Models
+<img src="figures/icon.png" width="15%"/> 
+
+SpatialLadder:  Progressive Training for Spatial Reasoning in Vision-Language Models
 </h1>
 
 _A progressive three-stage training framework with a high-quality dataset for spatial reasoning_
