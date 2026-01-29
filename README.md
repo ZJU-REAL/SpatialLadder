@@ -27,7 +27,7 @@ _A progressive three-stage training framework with a high-quality dataset for sp
 </div>
 
 ## 🎉 News
-- **2026.1.26:** Our paper has been accepted at ICLR 2026.
+- **2026.01.26:** Our paper has been accepted at ICLR 2026.
 - **2025.10.10:** We release our model, dataset, benchmarks and codes.
 - **2025.10.10:** We release our paper.
 
