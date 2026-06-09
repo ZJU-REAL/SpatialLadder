@@ -40,7 +40,7 @@ torchrun --nproc_per_node="2" \
     --gradient_accumulation_steps 1 \
     --gradient_checkpointing true \
     --logging_steps 1 \
-    --num_train_epochs 0.0001 \
+    --num_train_epochs 1 \
     --bf16 \
     --attn_implementation flash_attention_2 \
     --run_name ${EXP_NAME} \

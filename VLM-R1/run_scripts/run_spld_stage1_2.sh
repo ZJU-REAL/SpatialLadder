@@ -40,7 +40,7 @@ torchrun --nproc_per_node="2" \
     --lr_scheduler_type cosine \
     --warmup_ratio 0.1 \
     --deepspeed ${REPO_HOME}/src/open-r1-multimodal/local_scripts/zero3.json \
-    --num_train_epochs 0.001 \
+    --num_train_epochs 1 \
     --run_name spld_stage1_2 \
     --save_steps 200 \
     --save_only_model true \
